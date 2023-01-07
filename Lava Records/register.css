@@ -1,0 +1,69 @@
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    border: 2px solid white;
+    background-color: rgb(24, 24, 24);
+    font-weight: bolder;
+    
+}
+body{
+    min-width: 400px;
+}
+.container{
+    margin-top: 25vh;
+    align-items: center;
+    
+
+}
+
+#reset, #submit {
+    
+    /* justify-self: center; */
+    color: black;
+    /* min-width: 10vw;
+    height: 5vh;
+    font-size: 18px; */
+    height: 5vh;
+    width: 20vh;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(51, 51, 51, 0.685);
+    color: white;
+    border: 2px solid black;
+    
+    
+    
+}
+
+#register-text{
+    font-size: 200%;
+}
+#reset:hover, #submit:hover {
+    transition: all 0.2s linear;
+    background-color: rgba(148, 148, 148, 0.781);
+    cursor: pointer;
+}
+
+#username , #password , #password2 ,#email{
+    
+    height: 3vh;
+    min-width: 15vw;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: #6161614f;
+    
+}
+
+.hidden{
+    color:red;
+    height: 1.15em;
+}
+/* .hidden:empty > p::after{
+    content: '\200b';
+} */
+
+/* .hidden:empty {
+    content: '\200B';
+} */

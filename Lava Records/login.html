@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="logo"><a href="index.html">Lava Records</div></a>
+        <ul>
+            
+        <li id="home"><a href="index.html">Home</li></a>
+        <li id="record"><a href="records.html">Records</li></a>
+        <li id="favorites"><a href="favorites.html">Favorites</li></a>
+        <li id="contact"><a href="contact.html">Contact</li></a>
+        <li id="login"><a href="login.html"style="color:red;">Login</li></a>
+        <li id="register"><a href="register.html">Register</li></a>
+        <li id="logout"><a href="logout.php">Log out</li></a>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <p id="register-text">Login Form</p>
+        <div class="contact-form">
+            <form id="contactForm" method="post" action="login.php" onsubmit="return checkFields();">
+                <br>
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" >
+                <div class ="hidden" id = "usernameMessage"></div>
+                <br>
+                <label for="password">Password</label>
+                <input id="password" type="password" name= "password">
+                <div class ="hidden" id = "passwordMessage"></div>
+                <br>
+                <div class="register-buttons">
+                    <input id="submit" type= "submit" value= "Login" >
+                    <input id="reset" type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+        <div class ="hidden" id = "formMessage"></div>
+    </div>
+        <footer>
+            <div class="footer_socials">
+                <div class="footer_media_icons">
+                    
+                    <a href="https://twitter.com/radiohead" target="blank"><img src="images\socials_twitter.png"></a>
+                    <a href="https://www.facebook.com/radiohead" target="blank"><img src="images\socials_facebook.png"></a>
+                    <a href="https://www.instagram.com/radiohead/" target="blank"><img src="images\socials_instagram.svg"></a>
+                    
+                </div>
+
+                <a class="back_to_top" href="#top">Back to top <img src="images\arrow_up.png"> </a>
+            </div>
+        </footer>
+    
+    <script src="login.js"></script>
+</body>
+</html>

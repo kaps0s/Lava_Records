@@ -1,0 +1,259 @@
+/* .images{
+    margin: auto;
+} */
+
+[class^="record_container"]{
+    display: flex;
+    /* display: flex;
+    width : 44rem;
+    border-style : solid;
+    border-color : coral;
+    margin: 5em auto; */
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%;
+    border: 2px solid #FFFFFF;
+    
+    justify-self: center;
+    /* flex-direction: column; */
+    
+}
+@media only screen and (max-width: 800px) {
+    [class^="record_container"]{
+        flex-direction: column;
+    }
+    
+  }
+
+@media only screen and (max-width: 800px) {
+    .images{
+        margin: auto;
+    }
+  }
+
+
+
+/*.records_box {
+    display: flex;
+    width : 44rem;
+    border-style : solid;
+    border-color : coral;
+    margin: 5em auto;*/
+/*     margin-top: 10em;
+    margin-bottom : 10em;
+    margin: auto;   
+}*/
+
+.records_box_text{
+    border-style : solid;
+    border-color :black;
+    margin:auto;
+}
+
+.records_box_text p{
+    text-align: center;
+}
+
+img {
+    width : 200px;
+    height : 200px;
+}
+
+.record_box_heart{
+    position: initial;
+}
+
+/*antikatastash me to apo katw*/
+/*.favorite_heart {
+    htan off ->display: inline-block;
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+    top:100px;
+    right:70px;
+}*/
+
+[class^="favorite_heart"] {
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 30px;
+    
+}
+
+    /*border: 1px solid black;*/
+/*.favorite_heart::before {
+    font-size: 3em;
+    color: #000;
+    content: '♥';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+[class^="favorite_heart"]::before {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    content: '♥';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*
+.favorite_heart::after {
+    font-size: 3em;
+    color: red;
+    content: '♥';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+}
+*/
+[class^="favorite_heart"]::after {
+    font-size: 2em;
+    color: red;
+    content: '♥';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+}
+
+.favorite_heart_toggle::after {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.invisible{
+    display: none;
+}
+
+/*
+.record_box_heart {
+    position:relative;
+    width:100px; 
+    height:90px;
+    margin-top:10px; /* leave some space above 
+
+.record_box_heart::before, .record_box_heart::after {
+    position: absolute;
+    content: ""; 
+    left: 50px;
+    top: 50px;
+    width: 52px; 
+    height: 80px;
+    background: red; /* assign a nice red color
+    border-radius: 50px 50px 0 0; /* make the top edge round 
+
+}
+
+.record_box_heart::before{
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.record_box_heart::after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+*/
+
+.image {
+    position: relative;
+    
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+
+
+.image__overlay {
+    transition: opacity 0.25s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.767);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    
+    
+    
+}
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #000000;
+}
+
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 0.8;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+
+}
+.image__title a{
+    transition: all linear 0.3s;
+}
+.image__title:hover a{
+    
+    color: rgb(255, 17, 17);
+    
+    
+}
+
+
+.image__title2 {
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    
+    margin-top: 2.2rem;
+    
+    
+}
+.image__title2 a{
+    transition: all linear 0.3s;
+}
+.image__title2:hover a{
+    
+    color: rgb(0, 187, 125);
+    
+    
+}
